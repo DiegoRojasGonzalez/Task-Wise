@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Task-Wise';
+  tasks: string[] = [];
+
+  addTaskToList(taskName: string) {
+    this.tasks.push(taskName);
+  }
 }
