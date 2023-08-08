@@ -1,6 +1,8 @@
 <section>
     <h1>{{ title }}</h1>
     <app-task-input (taskAdded)="addTaskToList($event)"></app-task-input>
-    <app-task-list *ngFor="let task of tasks" [taskName]="task"></app-task-list>
+    <app-task-list
+      [tasks]="tasks"
+      (taskRemoved)="removeTask($event)"
+    ></app-task-list>
 </section>
-  
