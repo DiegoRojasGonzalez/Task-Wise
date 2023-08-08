@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,9 +10,16 @@ export class AppComponent implements OnInit {
   title = 'Task-Wise';
   tasks: string[] = [];
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private route: ActivatedRoute) {}
 
   ngOnInit() {
+    this.route.queryParams.subscribe(params => {
+      const encodedTasks = params['tasks'];
+      if (encodedTasks) {
+        this.tasks = JSON.parse(atob(encodedTasks));
+      }
+    });
+
     const storedTasks = localStorage.getItem('tasks');
     if (storedTasks) {
       this.tasks = JSON.parse(storedTasks);
