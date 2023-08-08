@@ -1,8 +1,15 @@
-<section>
-    <h1>{{ title }}</h1>
+<header  class="border">
+  <app-header></app-header>
+</header>
+
+<section class="border">
     <app-task-input (taskAdded)="addTaskToList($event)"></app-task-input>
     <app-task-list
       [tasks]="tasks"
       (taskRemoved)="removeTask($event)"
     ></app-task-list>
 </section>
+
+<footer class="border">
+  <app-footer></app-footer>
+</footer>

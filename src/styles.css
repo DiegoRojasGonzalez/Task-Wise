@@ -1,4 +1,14 @@
-* {
+/* Estilos para el modo claro */
+body {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Estilos para el modo oscuro */
+  body.dark-mode {
     background-color: #333;
     color: #fff;
-}
+  }
+  
+
+  
