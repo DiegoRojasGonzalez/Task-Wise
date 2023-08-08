@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,8 @@ export class AppComponent implements OnInit {
   title = 'Task-Wise';
   tasks: string[] = [];
 
+  constructor(private router: Router) {}
+
   ngOnInit() {
     const storedTasks = localStorage.getItem('tasks');
     if (storedTasks) {
@@ -18,12 +21,18 @@ export class AppComponent implements OnInit {
 
   addTaskToList(taskName: string) {
     this.tasks.push(taskName);
-    this.updateLocalStorage();
+    this.updateTasks();
   }
 
   removeTask(index: number) {
     this.tasks.splice(index, 1);
+    this.updateTasks();
+  }
+
+  updateTasks() {
     this.updateLocalStorage();
+    const encodedTasks = btoa(JSON.stringify(this.tasks));
+    this.router.navigate([], { queryParams: { tasks: encodedTasks }, queryParamsHandling: 'merge' });
   }
 
   updateLocalStorage() {
