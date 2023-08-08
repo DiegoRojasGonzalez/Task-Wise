@@ -1,6 +1,10 @@
-<div *ngFor="let task of tasks; let i = index">
-    <input type="checkbox">
-    <label>{{ task }}</label>
-    <button (click)="removeTask(i)">x</button>
-</div>
+<div class="task-list">
+    <div class="task-item" *ngFor="let task of tasks; let i = index">
+      <div class="task-content">
+        <input class="task-checkbox" type="checkbox">
+        <label class="task-label">{{ task }}</label>
+        <button class="remove-button" (click)="removeTask(i)">x</button>
+      </div>
+    </div>
+  </div>
   

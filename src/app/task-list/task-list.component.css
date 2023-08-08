@@ -1,0 +1,82 @@
+.task-list {
+  width: 440px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.task-content {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 8px;
+  height: auto;
+  border-radius: 4px;
+  position: relative;
+}
+
+.task-label {
+  flex-grow: 1;
+  max-width: calc(100% - 56px);
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.task-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #333; /* Estilo de borde para simular un checkbox */
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+.checkbox-icon.checked {
+  background-color: #333; /* Cambiar el fondo cuando el checkbox esté marcado */
+}
+
+.remove-button {
+  display: none;
+  border: none;
+  padding: 4px 8px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.task-item:hover .remove-button {
+  display: block;
+}
+
+.remove-button {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.task-item:hover .remove-button {
+  opacity: 1;
+}
+
+/* Agregar el efecto de tachado al hacer hover sobre el botón */
+.remove-button:hover ~ .task-content .task-label {
+  text-decoration: line-through;
+  transition: text-decoration 0.3s ease-in-out;
+}
