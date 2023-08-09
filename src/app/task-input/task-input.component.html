@@ -1,4 +1,5 @@
 <div class="inputContainer">
-    <input class="inputTask" #taskInput placeholder="Enter task" [(ngModel)]="inputText" (keydown.enter)="onAddTask()">
-    <button class="inputButton" (click)="onAddTask()">+</button>
+    <input class="inputTask" #taskInput  type="text" [(ngModel)]="inputText" (keydown.enter)="onAddTask()">
+    <button class="inputButton" (click)="onAddTask()">Add</button>
 </div>
+  

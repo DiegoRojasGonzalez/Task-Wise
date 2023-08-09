@@ -1,3 +1,4 @@
+// task-list.component.ts
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
@@ -7,11 +8,16 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class TaskListComponent {
   @Input() tasks: string[] = [];
+  @Input() completedTasks: boolean[] = Array(this.tasks.length).fill(false);
   @Output() taskRemoved = new EventEmitter<number>();
-  @Input() completedTasks: boolean[] = []; // Add this line
-
 
   removeTask(index: number) {
-    this.taskRemoved.emit(index);
+    this.tasks.splice(index, 1);
+    this.completedTasks.splice(index, 1);
+    this.updateTasks();
+  }
+
+  updateTasks() {
+    this.taskRemoved.emit();
   }
 }

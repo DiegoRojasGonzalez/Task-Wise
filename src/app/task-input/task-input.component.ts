@@ -1,3 +1,4 @@
+// task-input.component.ts
 import { Component, Output, EventEmitter, ViewChild, ElementRef, HostListener } from '@angular/core';
 
 @Component({

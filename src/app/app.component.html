@@ -3,7 +3,7 @@
     <app-header></app-header>
   </header>
   <app-task-input (taskAdded)="addTaskToList($event)"></app-task-input>
-  <app-task-list [tasks]="tasks"(taskRemoved)="removeTask($event)"></app-task-list>
+  <app-task-list [tasks]="tasks" [completedTasks]="completedTasks" (taskRemoved)="removeTask($event)"></app-task-list>
 </section>
   <footer class="border">
   <app-footer></app-footer>
