@@ -23,7 +23,6 @@ export class HeaderComponent {
 
   toggleDarkMode() {
     this.darkMode = !this.darkMode;
-    console.log(this.darkMode);
 
     if (this.darkMode) {
       this.renderer.addClass(document.body, 'dark-mode');
