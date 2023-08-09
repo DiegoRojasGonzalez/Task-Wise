@@ -2,6 +2,10 @@
   padding: 16px;
   width: 440px;
 }
+.task-content:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
 
 .task-item {
   display: flex;
@@ -12,7 +16,6 @@
 
 .task-content {
   display: flex;
-  align-items: flex-start;
   width: 100%;
   margin-bottom: 8px;
   height: auto;
@@ -33,29 +36,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: none;
-  background-color: transparent;
-  padding: 8px;
   cursor: pointer;
-  border-radius: 100%px;
-  transition: background-color 0.2s ease-in-out;
-  width: 24px;
-  transform: scale(1.5); /* Aumenta el tamaño del checkbox */
-  margin-right: 10px; /* Agrega un espacio entre el checkbox y el texto */
+  transform: scale(1.5);
+  margin-right: 10px; 
 }
 
-.checkbox-icon {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #333; /* Estilo de borde para simular un checkbox */
-  border-radius: 3px;
-  background-color: transparent;
-}
-
-.checkbox-icon.checked {
-  background-color: #333; /* Cambiar el fondo cuando el checkbox esté marcado */
-}
 
 .remove-button {
   display: none;
@@ -64,11 +49,9 @@
   position: absolute;
   right: 0;
   background-color: transparent;
-  z-index: 1;
-  padding: 1px;
   border-radius: 100%px;
-  transition: background-color 0.2s ease-in-out;
-  transform: scale(1.5); /* Aumenta el tamaño del botón */
+  transform: scale(1.5); 
+  color: #3524608a;
 }
 
 .task-item:hover .remove-button {
@@ -84,7 +67,6 @@
   opacity: 1;
 }
 
-/* Agregar el efecto de tachado al hacer hover sobre el botón */
 .remove-button:hover ~ .task-content .task-label {
   text-decoration: line-through;
   transition: text-decoration 0.3s ease-in-out;
@@ -92,5 +74,6 @@
 
 .completed {
   text-decoration: line-through;
-  color: #ccc;
+  color: #8d8d8d;
+
 }

@@ -1,12 +1,12 @@
 <section class="content">
-  
   <header  class="border">
     <app-header></app-header>
   </header>
   <app-task-input (taskAdded)="addTaskToList($event)"></app-task-input>
   <app-task-list [tasks]="tasks"(taskRemoved)="removeTask($event)"></app-task-list>
-<footer class="border">
+</section>
+  <footer class="border">
   <app-footer></app-footer>
 </footer>
 
-</section>
+

@@ -1,2 +1,6 @@
-<h1>Task Wise</h1>
-<button (click)="toggleDarkMode()">Toggle Mode</button>
+<section class="header">
+    <h1 class="headerText">Task Wise</h1>
+    <button class="headerButton" (click)="toggleDarkMode()">
+        <img src="{{ darkMode ? 'assets/dark_mode.svg' : 'assets/light_mode.svg' }}" alt="Toggle Mode">
+    </button>
+</section>

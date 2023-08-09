@@ -1,0 +1,14 @@
+.footerLinksContainer {
+    margin-top: 10px;
+}
+
+.footerLinks {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footerLinks:hover {
+    transform: scale(1.2);
+}
