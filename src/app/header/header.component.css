@@ -1,18 +1,18 @@
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Centrar verticalmente */
+    align-items: center; 
     padding: 20px;
     height: 70px;
     width: 440px;
-    position: relative; /* Agregar posición relativa para el posicionamiento absoluto del botón */
+    position: relative;
 }
 
 .headerText {
     font-size: 64px;
     margin: 0;
-    text-align: start; /* Centrar el texto horizontalmente */
-    flex: 1; /* Ocupar el espacio disponible para empujar el botón hacia la derecha */
+    text-align: start; 
+    flex: 1; 
 }
 
 .headerButton {

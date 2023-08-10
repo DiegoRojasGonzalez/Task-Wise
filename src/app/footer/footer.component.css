@@ -1,16 +1,13 @@
-/* Resetear los márgenes predeterminados del body */
 body {
     margin: 0;
 }
 
-/* Estilos para el contenedor de los enlaces en el footer */
 .footerLinksContainer {
     margin-top: 10px;
     display: flex;
     align-items: center;
 }
 
-/* Estilos para los enlaces en el footer */
 .footerLinks {
     width: 24px;
     height: 24px;
@@ -23,7 +20,6 @@ body {
     cursor: pointer;
 }
 
-/* Estilos para el enlace de compartir en el footer */
 .footerShareLink {
     display: flex;
     align-items: center;

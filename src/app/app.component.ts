@@ -1,4 +1,3 @@
-// app.component.ts
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
@@ -11,7 +10,7 @@ export class AppComponent implements OnInit {
   title = 'Task-Wise';
   tasks: string[] = [];
   completedTasks: boolean[] = [];
-  isLoading: boolean = true; // Declaración de la propiedad isLoading
+  isLoading: boolean = true;
 
   constructor(private router: Router, private route: ActivatedRoute) {}
 
@@ -30,7 +29,7 @@ export class AppComponent implements OnInit {
     });
     setTimeout(() => {
       this.isLoading = false;
-    }, 1200); // 1.2 segundos
+    }, 1200);
     
     const storedTasks = localStorage.getItem('tasks');
     const storedCompletedTasks = localStorage.getItem('completedTasks');
@@ -50,7 +49,6 @@ export class AppComponent implements OnInit {
   }
 
   removeTask(index: number) {
-    // Instead of removing the task, mark it as completed
     this.completedTasks[index] = true;
     this.updateTasks();
   }
