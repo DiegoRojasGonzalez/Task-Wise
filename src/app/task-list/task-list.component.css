@@ -58,6 +58,9 @@
   opacity: 1;
 }
 
+.task-content:hover .remove-button {
+  display: block;
+}
 .remove-button:hover ~ .task-content .task-label,
 .remove-button:hover ~ .task-content.completed .task-label {
   text-decoration: line-through;
