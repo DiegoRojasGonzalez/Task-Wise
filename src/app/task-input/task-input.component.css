@@ -1,0 +1,76 @@
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 440px;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.inputTask {
+    flex: 1;
+    height: 40px;
+    border: 0px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes breathing {
+    0% {
+        opacity: 0.5;
+        font-size: 16px;
+    }
+    50% {
+        opacity: 1;
+        font-size: 17px;
+    }
+    100% {
+        opacity: 0.5;
+        font-size: 16px;
+    }
+}
+
+.inputButton {
+    width: 100px; 
+    height: 40px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    animation: breathing 2s infinite;
+
+}
+
+
+@media (max-width: 550px) {
+    .inputContainer {
+        width: 350px;
+    }
+}
+
+@media (max-width: 425px) {
+    .inputContainer {
+        width: 330px;
+    }
+}
+
+@media (max-width: 350px) {
+    .inputContainer {
+        width: 290px;
+    }
+}
