@@ -11,6 +11,7 @@ export class AppComponent implements OnInit {
   title = 'Task-Wise';
   tasks: string[] = [];
   completedTasks: boolean[] = [];
+  isLoading: boolean = true; // Declaración de la propiedad isLoading
 
   constructor(private router: Router, private route: ActivatedRoute) {}
 
@@ -27,7 +28,10 @@ export class AppComponent implements OnInit {
         this.completedTasks = Array(this.tasks.length).fill(false);
       }
     });
-
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 1200); // 1.2 segundos
+    
     const storedTasks = localStorage.getItem('tasks');
     const storedCompletedTasks = localStorage.getItem('completedTasks');
     if (storedTasks) {
@@ -37,6 +41,7 @@ export class AppComponent implements OnInit {
       this.completedTasks = JSON.parse(storedCompletedTasks);
     }
   }
+  
 
   addTaskToList(taskName: string) {
     this.tasks.push(taskName);
