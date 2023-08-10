@@ -1,0 +1,9 @@
+<div class="task-list">
+  <div class="task-item" *ngFor="let task of tasks; let i = index">
+    <div class="task-content">
+      <input class="task-checkbox" type="checkbox" [(ngModel)]="completedTasks[i]" (change)="updateTasks()">
+      <label class="task-label" [ngClass]="{'completed': completedTasks[i]}">{{ task }}</label>
+      <button class="remove-button" (click)="removeTask(i)">x</button>
+    </div>
+  </div>
+</div>
