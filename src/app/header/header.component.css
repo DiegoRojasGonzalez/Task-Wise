@@ -4,15 +4,14 @@
     align-items: center; /* Centrar verticalmente */
     padding: 20px;
     height: 70px;
-    width: 100%;
+    width: 440px;
     position: relative; /* Agregar posición relativa para el posicionamiento absoluto del botón */
 }
 
 .headerText {
     font-size: 64px;
-    font-weight: 700;
     margin: 0;
-    text-align: center; /* Centrar el texto horizontalmente */
+    text-align: start; /* Centrar el texto horizontalmente */
     flex: 1; /* Ocupar el espacio disponible para empujar el botón hacia la derecha */
 }
 
@@ -22,4 +21,9 @@
     color: #fff;
     top: 0;
     right: 0;
+    cursor: pointer;
+}
+
+.headerButton:hover{
+    transform: scale(1.2);
 }
