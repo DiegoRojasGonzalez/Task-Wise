@@ -14,7 +14,7 @@
 
 ## Description
 
-Tast-Wise application, designed to simplify your task management process. With this user-friendly app, you can easily create, organize, and prioritize tasks that need your attention. Whether it's for personal use, work-related projects, or team collaboration, our app offers a straightforward and intuitive platform for jotting down your tasks.
+Task-Wise application, designed to simplify your task management process. With this user-friendly app, you can easily create, organize, and prioritize tasks that need your attention. Whether it's for personal use, work-related projects, or team collaboration, our app offers a straightforward and intuitive platform for jotting down your tasks.
 
 ## Screenshots
 
