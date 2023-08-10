@@ -4,6 +4,12 @@
   <a href="https://angular.io/" target="_blank"> 
     <img src="https://cdn.freebiesupply.com/logos/large/2x/angular-icon-1-logo-png-transparent.png" width="65" />
   </a>
+  <a href="https://www.typescriptlang.org/" target="_blank">
+      <img src="https://th.bing.com/th/id/R.8075e9fb9d9e4d38ab81dae248c6dbd0?rik=m8wEkmr8R1U1gA&riu=http%3a%2f%2fpnbmobile.com%2fimages%2ftypescript_logo.png&ehk=wde0lVRVQLeiYmCgdeE%2bTbW2qlCyP7smtUsY5bfYKwI%3d&risl=&pid=ImgRaw&r=0" width="65" />  
+  </a>
+  <a href="https://nodejs.org" target="_blank">
+    <img src="https://logos-download.com/wp-content/uploads/2016/09/Node_logo_NodeJS.png" width="90" />
+  </a>
 </div>
 
 ## Description
@@ -50,9 +56,9 @@ Thank you for your interest in contributing to Focus Nice! We appreciate your su
 
 ## Related Documentation
 
- - [Kivy’s documentation](https://kivy.org/doc/stable/)
- - [KivyMD documentation](https://kivymd.readthedocs.io/en/1.1.1/)
- - [Python documentation](https://docs.python.org/3/)
+ - [Angular documentation](https://angular.io/docs)
+ - [Nodejs documentation](https://nodejs.org/en/docs)
+ - [TypeScript documentation](https://www.typescriptlang.org/docs/)
 
 
 ## Authors
