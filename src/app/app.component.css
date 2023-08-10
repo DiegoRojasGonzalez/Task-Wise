@@ -52,3 +52,24 @@
     opacity: 0;
   }
 }
+
+@media (max-width: 550px) {
+  .content {
+    width: 400px;
+  }
+
+}
+
+@media (max-width: 425px) {
+  .content {
+    width: 340px;
+  }
+}
+
+@media (max-width: 350px) {
+  .content {
+    width: 300px;
+  }
+}
+  
+

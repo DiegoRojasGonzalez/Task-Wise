@@ -2,6 +2,7 @@
   padding: 16px;
   width: 440px;
 }
+
 .task-content:hover {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease-in-out;
@@ -38,9 +39,8 @@
   justify-content: center;
   cursor: pointer;
   transform: scale(1.5);
-  margin-right: 10px; 
+  margin-right: 10px;
 }
-
 
 .remove-button {
   display: none;
@@ -49,25 +49,17 @@
   position: absolute;
   right: 0;
   background-color: transparent;
-  border-radius: 100%px;
-  transform: scale(1.5); 
+  border-radius: 100%;
+  transform: scale(1.5);
   color: #3524608a;
-}
-
-.task-item:hover .remove-button {
-  display: block;
-}
-
-.remove-button {
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
 }
 
 .task-item:hover .remove-button {
   opacity: 1;
 }
 
-.remove-button:hover ~ .task-content .task-label {
+.remove-button:hover ~ .task-content .task-label,
+.remove-button:hover ~ .task-content.completed .task-label {
   text-decoration: line-through;
   transition: text-decoration 0.3s ease-in-out;
 }
@@ -75,5 +67,61 @@
 .completed {
   text-decoration: line-through;
   color: #8d8d8d;
+}
+
+@media (max-width: 550px) {
+  .remove-button {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+  }
+}
+
+@media (max-width: 550px) {
+  .content {
+    width: 400px;
+  }
+
+  .task-list {
+    width: 350px;
+  }
+
+  .task-label {
+    font-size: 16px;
+  }
+
+  .task-checkbox {
+    transform: scale(1.2);
+  }
+
+  .remove-button {
+    display: block;
+    transform: scale(1.2);
+  }
+
+  .task-item {
+    margin-bottom: 4px;
+  }
+}
+
+@media (max-width: 425px) {
+  .content {
+    width: 330px;
+  }
+
+  .task-list {
+    width: 330px;
+  }
 
 }
+
+@media (max-width: 350px) {
+  .content {
+    width: 300px;
+  }
+  .task-list {
+    width: 290px;
+  }
+}
+  
+

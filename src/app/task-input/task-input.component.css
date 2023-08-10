@@ -56,3 +56,21 @@
 
 }
 
+
+@media (max-width: 550px) {
+    .inputContainer {
+        width: 350px;
+    }
+}
+
+@media (max-width: 425px) {
+    .inputContainer {
+        width: 330px;
+    }
+}
+
+@media (max-width: 350px) {
+    .inputContainer {
+        width: 290px;
+    }
+}

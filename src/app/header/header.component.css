@@ -27,3 +27,24 @@
 .headerButton:hover{
     transform: scale(1.2);
 }
+
+@media (max-width: 550px) {
+    .header {
+        width: 350px;
+    }
+}
+
+@media (max-width: 425px) {
+    .header {
+        width: 330px;
+    }
+    .headerText {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 350px) {
+    .header {
+        width: 290px;
+    }
+}
