@@ -22,8 +22,8 @@ Task-Wise application, designed to simplify your task management process. With t
 ## Screenshots
 
 <div style="display: flex;">
-  <img src="https://raw.githubusercontent.com/DiegoRojasGonzalez/DiegoRojasGonzalez.github.io/main/resources/img/taskwise1.png" width="400" /> 
-  <img src="https://raw.githubusercontent.com/DiegoRojasGonzalez/DiegoRojasGonzalez.github.io/main/resources/img/taskwise2.png" width="400" /> 
+  <img src="https://raw.githubusercontent.com/DiegoRojasGonzalez/Resources/main/ss-task-wise-light.png" width="600" /> 
+  <img src="https://raw.githubusercontent.com/DiegoRojasGonzalez/Resources/main/ss-task-wise-dark.png" width="600" /> 
 </div>
 
 ## Requirements
