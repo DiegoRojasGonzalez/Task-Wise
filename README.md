@@ -37,7 +37,7 @@ To run the Task Wise in locally, you will need to install the following dependen
 $ npm install
 ```
 How to Contribute
-We welcome contributions from the community to make Focus Nice even better! To contribute to the project, please follow these steps:
+We welcome contributions from the community to make Task Wise even better! To contribute to the project, please follow these steps:
 
 1. Fork the repository on GitHub.
 2. Clone the forked repository to your local machine.
@@ -53,7 +53,7 @@ We welcome contributions from the community to make Focus Nice even better! To c
 ## Contact
 If you have any questions, suggestions, or feedback, feel free to reach out to us. You can contact the project maintainers via email at gonzalez.rojas.ignacio.diego@gmail.com.
 
-Thank you for your interest in contributing to Focus Nice! We appreciate your support.
+Thank you for your interest in contributing to Task Wise! We appreciate your support.
 
 
 
